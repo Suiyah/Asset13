@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Body Styles */
+  body {
+    background-color: #d8f3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Left Section */
+  .left-section {
+    flex: 1;
+    background: url('img/background.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .left-section .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .left-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .left-section p {
+    margin-bottom: 1.5em;
+  }
+  
+  .media-kit {
+    background-color: #4cafaf;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .media-kit:hover {
+    background-color: #3b8c8c;
+  }
+  
+  /* Right Section */
+  .right-section {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .right-section h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Year Filter */
+  .year-scroll-container {
+    max-width: 100%;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .year-scroll-container::-webkit-scrollbar {
+    height: 6px;
+  }
+  
+  .year-scroll-container::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 3px;
+  }
+  
+  .year-filter {
+    display: flex;
+    gap: 15px;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+  
+  .year-filter .year {
+    color: #aaa;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+  
+  .year-filter .year:hover {
+    color: #333;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .year-filter .active {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  /* Article List */
+  .article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .article {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+  }
+  
+  .icon img {
+    border-radius: 50%;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  .content p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .date {
+    font-size: 0.9em;
+    color: #888;
+  }
+  
